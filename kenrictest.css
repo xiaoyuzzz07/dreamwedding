@@ -1,0 +1,89 @@
+main {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    width: 80%;
+    margin: auto;
+}
+
+main p {
+    font-size: 18px;
+    line-height: 1.6; 
+    color: #333;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+main h1 {
+    text-align: center;
+    color: #2c2c2c;
+    border-bottom: 2px solid #c5a059; 
+    padding-bottom: 10px;
+}
+
+main h4 {
+    text-align: center;
+    color: #c5a059;
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+details {
+    background-color: #f4f4f4;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #2c2c2c;
+    padding: 5px;
+}
+
+summary:hover {
+    color: #c5a059;
+}
+
+address {
+    border: 2px solid #c5a059;
+    padding: 20px;
+    text-align: center;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+main ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+main ul li {
+    margin-bottom: 10px;
+}
+
+main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+main img + p {
+    text-align: center;
+    font-style: italic;
+    color: #555;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #ddd; 
+    padding-bottom: 30px; 
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,362 @@
+.header{
+    background-image: url("headerbg.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 5% 20px 5%;
+
+}
+
+.header h1{
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: "Cormorant Garamond", serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Cormorant Garamond", serif;
+}
+
+body nav ul {
+    position: fixed;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    background: #2c2c2c;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    padding: 1rem 2rem;
+}
+
+body nav li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover { 
+    color: #daa300; 
+}
+
+#home {
+    background-image: url("bg1.webp");
+    background-size: cover;
+    background-position: center;
+    height: 77vh;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 5% 50px 5%;
+}
+
+#home h1 {
+    color: white;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    margin: 0;
+}
+
+.text p {
+    background-color: rgb(241,237,237);
+    padding: 4rem 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#service {
+    background-image: url("service bg1.webp");
+    height: 65vh;
+    background-position: center;
+    text-align: center;
+    padding: 80px 5% ;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#service a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #c5a059;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#service a:hover {
+    background: #b08d45;
+}
+
+.service-page h4{
+    font-size: 1.5rem;
+    color: #333;
+    border-bottom: 2px solid #d4af37; 
+    display: inline-block; 
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.service-page p{
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.service-card{
+    width: 42%;
+    padding: 1.5rem;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    text-align: center;
+    background: #f4f4f4;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.service-card img{
+    width: 40rem;
+    object-fit: cover;
+    margin-top: 0;
+}
+
+.venuemain{
+    width: 42%;
+    padding: 1.5rem;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    text-align: center;
+    background: #f4f4f4;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.venuemain img{
+    width: 40rem;
+    object-fit: cover;
+    margin-top: 0;
+}
+
+.venuemain h4{
+    font-size: 1.5rem;
+    color: #333;
+    border-bottom: 2px solid #d4af37; 
+    display: inline-block; 
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.package {
+    max-width: 900px;
+    margin: 50px auto; 
+    padding: 0 20px;
+}
+
+.package dl{
+    border: 2px solid #1a1a1a;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: rgb(241,237,237);
+}
+
+.package dt {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #d4af37; 
+    padding-bottom: 10px;
+}
+
+.package dd {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 0; 
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+}
+
+.package ul {
+    list-style-type: disc; 
+    margin-left: 20px; 
+    margin-bottom: 15px;
+}
+
+.package ul li {
+    margin-bottom: 8px;
+    color: #444;
+    font-size: 16px;
+}
+
+#venue {
+    padding: 80px 5%;
+}
+
+#venuetypes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+#venue a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    border: 2px solid #c5a059;
+    color: #c5a059;
+    text-decoration: none;
+}
+
+#venue a:hover {
+    background: #c5a059;
+    color: white;
+}
+
+#venuetypes #card {
+    width: 30%;
+    min-width: 280px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+#cardtext {
+    padding: 20px;
+}
+
+#cardtext h3 {
+    font-family: "Cormorant Garamond", serif;
+    color: #333;
+}
+
+#cardtext ul {
+    padding-left: 20px;
+}
+
+#portfolio {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+#portfolio img {
+    width: 45%;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#portfolio a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    border: 2px solid #c5a059;
+    color: #c5a059;
+    text-decoration: none;
+}
+
+#portfolio a:hover {
+    background: #c5a059;
+    color: white;
+}
+
+#packages {
+    background: #2c2c2c;
+    color: white;
+    text-align: center;
+    padding: 80px 5%;
+}
+
+#packages a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #c5a059;
+    color: white;
+    text-decoration: none;
+}
+
+#packages a:hover {
+    background: #b08d45;
+}
+
+#about {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+#about h4 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.8rem;
+    color: #c5a059;
+}
+
+#about a {
+    display: inline-block;
+    margin-top: 20px;
+    border: 2px solid #c5a059;
+    padding: 10px 25px;
+    color: #c5a059;
+    text-decoration: none;
+}
+
+#about a:hover {
+    background: #c5a059;
+    color: white;
+}
+
+#contact {
+    padding: 80px 5%;
+    text-align: center;
+    background: #2c2c2c;
+    color: white;
+}
+
+.contact {
+    background: rgb(61,58,58);
+    color: blanchedalmond;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+#contact a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #c5a059;
+    color: white;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    background: #b08d45;
+}
+
+footer {
+    background: dimgray;
+    padding: 20px;
+    color: aliceblue;
+    text-align: center;
+}
+

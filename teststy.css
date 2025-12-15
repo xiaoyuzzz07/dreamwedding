@@ -1,0 +1,234 @@
+body { cmargin: 0; font-family: "Helvetia Neue", Arial, sans-serif; scroll-behavior: smooth; }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background: rgba(255,255,255,0.95);
+      z-index: 10;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav .logo { font-size: 1.5rem; font-weight: bold; color: #bf8f00; }
+    nav ul { list-style: none; display: flex; gap: 1.5rem; }
+    nav ul li a {
+      text-decoration: none;
+      color: #444;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+    nav ul li a:hover { color: #bf8f00; }
+
+    /* Header Banner */
+    header {
+      height: 90vh;
+      background: url("pic1.jpg") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      color: black;
+      margin-top: 68px;
+    }
+    header::after {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.45);
+    }
+    header .text {
+      position: relative;
+      text-align: center;
+      max-width: 700px;
+    }
+    header h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+    header p { font-size: 1.2rem; margin-bottom: 2rem; }
+    header a {
+      background: #bf8f00;
+      padding: 0.7rem 1.4rem;
+      text-decoration: none;
+      color: white;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    /* Section Base Design */
+    .section { padding: 4rem 2rem; max-width: 1100px; margin: auto; }
+    .section h2 { text-align: center; font-size: 2.5rem; margin-bottom: 2rem; color: #bf8f00; }
+
+    /* About */
+    .about { text-align: center; max-width: 850px; margin: auto; line-height: 1.7; }
+
+    /* Services */
+    .services { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; }
+    .service-card {
+      width: 300px;
+      padding: 1.5rem;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      text-align: center;
+      background: white;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+
+    /* Portfolio Grid */
+    .portfolio-grid,
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .portfolio-grid img,
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 8px;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    /* Packages */
+    .packages { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; }
+    .package-card {
+      width: 300px;
+      border-radius: 8px;
+      padding: 1.5rem;
+      border: 1px solid #eee;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+      background: white;
+      text-align: center;
+    }
+    .package-card h3 { margin-bottom: 0.5rem; color: #bf8f00; }
+    .package-card ul { padding-left: 20px; text-align: left; }
+
+    /* Blog */
+    .blog-post {
+      max-width: 800px;
+      margin: auto;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      border-left: 4px solid #bf8f00;
+      background: #fafafa;
+      border-radius: 6px;
+    }
+
+    /* Contact */
+    .contact { text-align: center; line-height: 1.6; }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Headings */
+h2 {
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+/* Contact/Accordion Styling */
+.contact-item {
+    border-bottom: 1px solid #eee;
+    padding: 5px 0;
+}
+
+summary {
+    font-weight: bold;
+    padding: 15px 0;
+    cursor: pointer;
+    /* Remove the default triangle/arrow, leaving only the text */
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Add a custom '+' sign using CSS content property */
+summary::after {
+    content: '+';
+    font-size: 1.5em;
+}
+
+/* Change the '+' to a '-' when open */
+.contact-item[open] summary::after {
+    content: '-';
+}
+
+/* Location Layout (Side-by-Side) */
+.location-layout {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.address-details {
+    flex: 1; 
+}
+
+.map-placeholder {
+    flex: 2; /* Map section is wider */
+    background-color: #f0f0f0;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #ddd;
+    color: #666;
+    overflow: hidden; /* Contains the image */
+}
+
+/* Button Styling */
+.contact-buttons .btn {
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block; /* allows padding and margin */
+    border: 1px solid #000;
+}
+
+.email-btn, .call-btn {
+    background-color: #000;
+    color: white;
+}
+
+.chat-btn {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 700px) {
+    .location-layout {
+        flex-direction: column; /* Stack address and map vertically */
+    }
+}
